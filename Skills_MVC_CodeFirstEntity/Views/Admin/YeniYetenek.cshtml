@@ -1,0 +1,26 @@
+﻿
+@model Skills_MVC_CodeFirstEntity.Models.siniflar.Yetenekler
+
+
+@{
+    ViewBag.Title = "YeniYetenek";
+    Layout = "~/Views/Shared/_LayoutNavBar.cshtml";
+}
+
+<form class="form-group" method="post">
+
+    <div style="margin-bottom:20px">
+        <label>Yetenek Açıklama</label>
+        @Html.TextBoxFor(x => x.ACIKLAMA, new { @class = "form-control" })
+    </div>
+
+    <div style="margin-bottom:20px">
+        <label>Yetenek Değeri</label>
+        @Html.TextBoxFor(x => x.DEGER, new { @class = "form-control" })
+    </div>
+    <div>
+        <button class="btn btn-primary">Yetenek Ekle</button>
+    </div>
+
+</form>
+
